@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Momo Gallery + Dating Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="profile">
+        <div class="header">
+          <h1>About Me, YIII YIII!</h1>
+          <img src="../pictures/dunkin_momo.jpg" alt="" />
+        </div>
+
+        <p>
+          Momo is a well distinguished and well-groomed gentle-cat that lives on
+          the Georgia Tech campus. He is generally considered to be the most
+          approachable of all of the cats at Georgia Tech. His favorite things
+          in life are screaming YIII YIII, chunky campus chipmunks, and free
+          food/pets from students of Georgia Tech!
+        </p>
+        <!--         <h5>(FYI, YIII YIII is what Momo sounds like when he screams)</h5> -->
+        <span>Would you swipe right on Momo? 🤩</span>
+      </div>
+
+      <h1>MOMO's GALLERY</h1>
+
+      <!-- The grid: four columns -->
+      <div class="imageContainer">
+        <div class="row" id="imageContainerRow1"></div>
+        <div class="row" id="imageContainerRow2"></div>
+        <div class="row" id="imageContainerRow3"></div>
+      </div>
+      <!-- The expanding image container -->
+      <div class="expandedImgContainer">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"
+          >&times;</span
+        >
+
+        <!-- Expanded image -->
+        <img id="expandedImg" />
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--         <div class="column">
+          <img
+            src="../pictures/dunkin_momo.jpg"
+            alt="Dunkin momo"
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="../pictures/Side eye.PNG"
+            alt="Side eye"
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="../pictures/Big yawn.JPG"
+            alt="Big yawn"
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="../pictures/Doll.JPG"
+            alt="Doll face"
+            onclick="myFunction(this);"
+          />
+        </div> -->
