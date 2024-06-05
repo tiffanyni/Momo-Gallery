@@ -2,7 +2,8 @@ body {
   /*   margin: 0; */
   height: 100%;
   background-repeat: no-repeat;
-  background-color: #87ceeb;
+  /*   background-color: #87ceeb; */
+  background-color: #8ed5f1;
 }
 
 .profile {
@@ -109,17 +110,16 @@ body {
   align-items: center;
 }
 
-/* Closable button inside the image */
 .closebtn {
   position: absolute;
-  right: 22%;
+  right: 29%;
   color: white;
   font-size: 50px;
   cursor: pointer;
 }
 
 .expandedImgContainer #expandedImg {
-  width: 60%;
+  width: 45%;
   display: block;
   margin: auto;
   border-radius: 5%;

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ["../pictures/Doll.JPG", "Doll face"],
     ],
     [
-      ["../pictures/Raise paw.jpg", "Raise paw"],
+      ["../pictures/Momo stare.PNG", "Momo stares"],
       ["../pictures/Scream.JPG", "Momo Scream"],
       ["../pictures/Shy.PNG", "Momo shy"],
       ["../pictures/Scratching tree.PNG", "Momo scratching tree"],
