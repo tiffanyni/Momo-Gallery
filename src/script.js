@@ -1,20 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
   const picsArray = [
     [
-      ["../pictures/Momo pose.JPG", "Momo pose"],
-      ["../pictures/Side eye.PNG", "Side eye"],
+      ["../pictures/Momo pose.JPG", "Momo poses for the camera"],
+      ["../pictures/Side eye.PNG", "Quirky Momo"],
       ["../pictures/Big yawn.JPG", "Big yawn"],
       ["../pictures/Doll.JPG", "Doll face"],
     ],
     [
       ["../pictures/Momo stare.PNG", "Momo stares"],
-      ["../pictures/Scream.JPG", "Momo Scream"],
-      ["../pictures/Shy.PNG", "Momo shy"],
+      ["../pictures/Scream.JPG", "Momo Screams"],
+      ["../pictures/Shy.PNG", "Shy Momo"],
       ["../pictures/Scratching tree.PNG", "Momo scratching tree"],
     ],
     [
-      ["../pictures/With nature.PNG", "Momo with nature"],
-      ["../pictures/Hiding.JPG", "Momo hiding"],
+      ["../pictures/With nature.PNG", "Lion king Momo"],
+      ["../pictures/Hiding.JPG", "Momo camouflaging (failed)"],
       ["../pictures/Elegant.PNG", "Elegant Momo"],
       ["../pictures/Rolls on floor.JPG", "Momo rolling on floor"],
     ],
@@ -32,6 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const column = document.createElement("div");
       column.classList.add("column");
 
+      const overlayDiv = document.createElement("div");
+      overlayDiv.classList.add("overlay");
+
       const img = document.createElement("img");
       img.src = src;
       img.alt = alt;
@@ -39,7 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
         expandImage(this, idx, row.indexOf([src, alt]));
       };
 
+      overlayDiv.innerHTML = img.alt;
       column.appendChild(img);
+      column.appendChild(overlayDiv);
       imageContainer.appendChild(column);
     });
   });
