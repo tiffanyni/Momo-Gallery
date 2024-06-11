@@ -1,22 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
   const picsArray = [
     [
-      ["../pictures/Momo pose.JPG", "Momo poses for the camera"],
-      ["../pictures/Side eye.PNG", "Quirky Momo"],
-      ["../pictures/Big yawn.JPG", "Big yawn"],
-      ["../pictures/Doll.JPG", "Doll face"],
+      ["./pictures/Momo pose.JPG", "Momo poses for the camera"],
+      ["./pictures/Side eye.PNG", "Quirky Momo"],
+      ["./pictures/Big yawn.JPG", "Big yawn"],
+      ["./pictures/Doll.JPG", "Doll face"],
     ],
     [
-      ["../pictures/Momo stare.PNG", "Momo stares"],
-      ["../pictures/Scream.JPG", "Momo Screams"],
-      ["../pictures/Shy.PNG", "Shy Momo"],
-      ["../pictures/Scratching tree.PNG", "Momo scratching tree"],
+      ["./pictures/Momo stare.PNG", "Momo stares"],
+      ["./pictures/Scream.JPG", "Momo Screams"],
+      ["./pictures/Shy.PNG", "Shy Momo"],
+      ["./pictures/Scratching tree.PNG", "Momo scratching tree"],
     ],
     [
-      ["../pictures/With nature.PNG", "Lion king Momo"],
-      ["../pictures/Hiding.JPG", "Momo camouflaging (failed)"],
-      ["../pictures/Elegant.PNG", "Elegant Momo"],
-      ["../pictures/Rolls on floor.JPG", "Momo rolling around"],
+      ["./pictures/With nature.PNG", "Lion king Momo"],
+      ["./pictures/Hiding.JPG", "Momo camouflaging (failed)"],
+      ["./pictures/Elegant.PNG", "Elegant Momo"],
+      ["./pictures/Rolls on floor.JPG", "Momo rolling around"],
     ],
   ];
 
