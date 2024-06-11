@@ -3,28 +3,45 @@ body {
   height: 100%;
   background-repeat: no-repeat;
   /*   background-color: #87ceeb; */
-  background-color: #8ed5f1;
+  background-color: rgb(222, 220, 214);
 }
 
 .profile {
   display: flex;
-  background-color: #163b57;
+  flex-direction: column;
+  background-color: #ffffffb0;
+  padding: 20px;
   border-radius: 20px;
   align-items: center;
-  flex-direction: column;
-  /*   max-width: fit-content; */
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card1,
+.card2 {
+  width: 45%;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.card1 {
+  background-color: rgb(197, 165, 183);
+}
+
+.card2 {
+  background-color: #709baacd;
 }
 
 .header {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .profile h1 {
@@ -33,25 +50,61 @@ body {
   text-align: center;
 }
 
-.profile img {
+.card1 img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   margin-left: 0%;
 }
 
+.card2 img {
+  width: 60%;
+  border-radius: 20px;
+}
+
+.idCard p {
+  font-weight: 500;
+}
+
+.idCard {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: normal;
+}
+
 .profile p {
   display: flex;
   text-align: center;
-  padding: 30px;
-  /*   font-family: "Courier New", Courier, monospace; */
-  /*   font-family: "Monoton" */
-  font-size: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  font-size: 20px;
   color: white;
 }
 
-.profile span {
-  color: white;
+.cuteCharm,
+.intimidate,
+.keenEye {
+  max-width: 100%;
+  border-radius: 20%;
+}
+
+.cuteCharm {
+  background-color: rgba(249, 120, 165, 0.572);
+}
+
+.intimidate {
+  background-color: rgba(87, 87, 87, 0.52);
+}
+
+.keenEye {
+  background-color: rgba(135, 59, 202, 0.529);
+}
+
+.swipe {
+  color: black;
   font-size: 24px;
   font-weight: 1000;
   /*   padding-bottom: 10px; */
@@ -80,7 +133,7 @@ body {
 
 /* Style the images inside the grid */
 .column img {
-  width: 40%;
+  width: 35%;
 
   opacity: 0.8;
   cursor: pointer;
@@ -144,11 +197,11 @@ body {
 }
 
 .prev {
-  left: 12%;
+  left: 20%;
 }
 
 .next {
-  right: 12%;
+  right: 20%;
 }
 
 .previewContainer {
@@ -164,18 +217,6 @@ body {
   transition: 0.5s ease;
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  /*   position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  transition: 0.5s ease;
-  opacity: 0; 
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center; */
 }
 
 /* When you mouse over the container, fade in the overlay title */

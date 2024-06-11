@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ["../pictures/With nature.PNG", "Lion king Momo"],
       ["../pictures/Hiding.JPG", "Momo camouflaging (failed)"],
       ["../pictures/Elegant.PNG", "Elegant Momo"],
-      ["../pictures/Rolls on floor.JPG", "Momo rolling on floor"],
+      ["../pictures/Rolls on floor.JPG", "Momo rolling around"],
     ],
   ];
 
