@@ -1,8 +1,6 @@
 body {
-  /*   margin: 0; */
   height: 100%;
   background-repeat: no-repeat;
-  /*   background-color: #87ceeb; */
   background-color: rgb(222, 220, 214);
 }
 
@@ -28,11 +26,11 @@ body {
   border-radius: 20px;
 }
 
-.card1 {
+.card2 {
   background-color: rgb(197, 165, 183);
 }
 
-.card2 {
+.card1 {
   background-color: #709baacd;
 }
 
@@ -50,14 +48,14 @@ body {
   text-align: center;
 }
 
-.card1 img {
+.card2 img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   margin-left: 0%;
 }
 
-.card2 img {
+.card1 img {
   width: 60%;
   border-radius: 20px;
 }
@@ -128,7 +126,6 @@ body {
   display: flex;
   justify-content: center;
   width: 25%;
-  /*   padding: 10px; */
 }
 
 /* Style the images inside the grid */
