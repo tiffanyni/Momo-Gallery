@@ -49,8 +49,9 @@ body {
 }
 
 .card2 img {
-  width: 150px;
-  height: 150px;
+  /*   width: 150px;
+  height: 150px; */
+  width: 30%;
   border-radius: 50%;
   margin-left: 0%;
 }
@@ -219,4 +220,47 @@ body {
 /* When you mouse over the container, fade in the overlay title */
 .column img:hover + .overlay {
   opacity: 1;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column; /* Stack cards vertically */
+  }
+
+  .card1,
+  .card2 {
+    width: 100%; /* Take up full width */
+  }
+
+  .card1 img {
+    width: 100%; /* Make image fill its container */
+    border-radius: 0; /* Remove border radius */
+  }
+
+  .profile p {
+    padding: 10px; /* Decrease padding */
+    font-size: 16px; /* Decrease font size */
+  }
+
+  .imageContainer {
+    padding: 10px; /* Decrease padding */
+  }
+
+  .column img {
+    width: 100%; /* Make images fill their container */
+  }
+
+  .closebtn {
+    right: 10%; /* Adjust position of close button */
+  }
+
+  .expandedImgContainer #expandedImg {
+    width: 80%; /* Adjust width of expanded image */
+  }
+
+  .prev,
+  .next {
+    font-size: 30px; /* Decrease size of navigation buttons */
+  }
 }
