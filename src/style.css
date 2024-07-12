@@ -1,0 +1,266 @@
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: rgb(222, 220, 214);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffffb0;
+  padding: 20px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card1,
+.card2 {
+  width: 45%;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.card2 {
+  background-color: rgb(197, 165, 183);
+}
+
+.card1 {
+  background-color: #709baacd;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile h1 {
+  font-family: "Tahoma", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.card2 img {
+  /*   width: 150px;
+  height: 150px; */
+  width: 30%;
+  border-radius: 50%;
+  margin-left: 0%;
+}
+
+.card1 img {
+  width: 60%;
+  border-radius: 20px;
+}
+
+.idCard p {
+  font-weight: 500;
+}
+
+.idCard {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: normal;
+}
+
+.profile p {
+  display: flex;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.cuteCharm,
+.intimidate,
+.keenEye {
+  max-width: 100%;
+  border-radius: 20%;
+}
+
+.cuteCharm {
+  background-color: rgba(249, 120, 165, 0.572);
+}
+
+.intimidate {
+  background-color: rgba(87, 87, 87, 0.52);
+}
+
+.keenEye {
+  background-color: rgba(135, 59, 202, 0.529);
+}
+
+.swipe {
+  color: black;
+  font-size: 24px;
+  font-weight: 1000;
+  /*   padding-bottom: 10px; */
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+
+/* Style the images inside the grid */
+.column img {
+  width: 35%;
+
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.imageContainer {
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closebtn {
+  position: absolute;
+  right: 29%;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.expandedImgContainer #expandedImg {
+  width: 45%;
+  display: block;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.expandedImgContainer {
+  position: relative;
+  text-align: center;
+  margin: 20px;
+  display: none;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 40%;
+  /*   transform: translateY(-50%); */
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.prev {
+  left: 20%;
+}
+
+.next {
+  right: 20%;
+}
+
+.previewContainer {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* the overlay effect */
+.overlay {
+  opacity: 0;
+  position: absolute;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.column img:hover + .overlay {
+  opacity: 1;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column; /* Stack cards vertically */
+  }
+
+  .card1,
+  .card2 {
+    width: 100%; /* Take up full width */
+  }
+
+  .card1 img {
+    width: 100%; /* Make image fill its container */
+    border-radius: 0; /* Remove border radius */
+  }
+
+  .profile p {
+    padding: 10px; /* Decrease padding */
+    font-size: 16px; /* Decrease font size */
+  }
+
+  .imageContainer {
+    padding: 10px; /* Decrease padding */
+  }
+
+  .column img {
+    width: 100%; /* Make images fill their container */
+  }
+
+  .closebtn {
+    right: 10%; /* Adjust position of close button */
+  }
+
+  .expandedImgContainer #expandedImg {
+    width: 80%; /* Adjust width of expanded image */
+  }
+
+  .prev,
+  .next {
+    font-size: 30px; /* Decrease size of navigation buttons */
+  }
+}
